@@ -7,7 +7,7 @@ const app = express();
 
 const users = [];
 
-//midleware - abastecimento
+//midleware - abastecimento.
 app.use(express.json());
 // function soma (a,b){
 //     return a+b}
