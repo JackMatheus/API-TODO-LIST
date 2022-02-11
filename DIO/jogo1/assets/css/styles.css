@@ -1,0 +1,294 @@
+
+@font-face {
+	font-family:Titulo;
+	src:url(../fontes/ANODETONOONE.TTF);
+}
+
+h1 {
+	font-family:Titulo;
+	font-size:40        px;
+	color:#ff9b6d8f;
+}
+
+body {
+	background-image:url(../imgs/fundo.webp);
+}
+
+#container{
+	width:950px;
+	height:auto;
+	position:relative;
+    margin-top: 100px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+#fundoGame {
+	width:950px;
+	height:400px;
+	background-image:url(../imgs/fundo_game.png);
+    background-size: 700px;
+	border-color:#FFF;
+	border-style:solid;
+}
+
+#jogador {
+	width:96px;
+	height:96px;
+	position:absolute;
+	left:8px;
+	top:100px;
+background-image:url(../imgs/apache.png);
+
+}
+
+#inimigo1 {
+	width: 48px;
+	height: 48px;
+	position: absolute;
+	left: 689px;
+	top: 253px;
+	background-image:url(../imgs/inimigo1.png);
+	
+}
+
+#inimigo2 {
+	width: 48px;
+	height: 48px;
+	position: absolute;
+	left: 850px;
+	top: 330px;
+	background-image: url(../imgs/inimigo2.png);
+}
+
+#amigo {
+	width: 48px;
+	height: 48px;
+	position: absolute;
+	left: 30px;
+	top: 315px;
+	background-image:url(../imgs/amigo.png);
+}
+
+#inicio {
+	width:350px;
+	height:200px;
+
+	background-color:rgb(0, 59, 51);
+    color: rgb(166, 216, 177);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:14px;
+
+
+ 	margin-left: auto;
+    margin-right:auto;
+ 	margin-top:100px;
+	text-align:center;
+	padding:10px;
+
+}
+
+
+.anima1 {
+	background-image:url(../imgs/apache.png);
+	animation:play .5s steps(4) infinite;
+
+       -webkit-animation: play .5s steps(4) infinite;
+       -moz-animation: play .5s steps(4) infinite;
+       -ms-animation: play .5s steps(4) infinite;
+       -o-animation: play .5s steps(4) infinite;
+}
+
+@keyframes play {
+	from {background-position:0px;}
+	to {background-position:-384px;}
+}
+
+
+@-webkit-keyframes play {
+   from { background-position:0px; }
+     to { background-position: -384px; }
+}
+
+@-moz-keyframes play {
+   from { background-position:0px; }
+     to { background-position: -384px; }
+}
+
+@-ms-keyframes play {
+   from { background-position:0px; }
+     to { background-position: -384px; }
+}
+
+@-o-keyframes play {
+   from { background-position:0px; }
+     to { background-position: -384px; }
+}
+
+
+.anima2 {
+    background-image:url(../imgs/inimigo1.png);
+    animation: play .5s steps(4) infinite;
+    -webkit-animation: play .5s steps(4) infinite;
+    -moz-animation: play .5s steps(4) infinite;
+    -ms-animation: play .5 steps(4) infinite;
+    -o-animation: play .5s steps(4) infinite; 
+}
+
+
+.anima3 {
+	background-image:url(../imgs/amigo.png);
+	animation:play2 .5s steps(6) infinite;
+	-webkit-animation: play2 .5s steps(6) infinite;
+       -moz-animation: play2 .5s steps(6) infinite;
+        -ms-animation: play2 .5s steps(6) infinite;
+         -o-animation: play2 .5s steps(6) infinite;
+}
+
+.anima5 {
+    background-image:url(../imgs/inimigo2.png);
+    animation: play .5s steps(4) infinite;
+    -webkit-animation: play .5s steps(4) infinite;
+    -moz-animation: play .5s steps(4) infinite;
+    -ms-animation: play .5 steps(4) infinite;
+    -o-animation: play .5s steps(4) infinite; 
+}
+
+@keyframes play2 {
+	from {background-position:0px;}
+	to {background-position:-288px;}
+}
+
+@-webkit-keyframes play2 {
+   from { background-position:    0px; }
+     to { background-position: -288px; }
+}
+
+@-moz-keyframes play2 {
+   from { background-position:    0px; }
+     to { background-position: -288px; }
+}
+
+@-ms-keyframes play2 {
+   from { background-position:    0px; }
+     to { background-position: -288px; }
+}
+
+@-o-keyframes play2 {
+   from { background-position:    0px; }
+     to { background-position: -288px; }
+}
+
+#disparo {
+	width: 50px;
+	height: 8px;
+	position: absolute;
+	background-image: url(../imgs/disparo.png);
+}
+
+#explosao1 {
+    width:15px;
+    height:87px;
+    position:absolute;
+}
+
+#explosao2 {
+    width:15px;
+    height:87px;
+    position:absolute;  
+}
+
+#explosao3 {
+	width:44px;
+	height:51px;
+	position:absolute;
+}
+
+.anima4 {
+	width:48px;
+	height:48px;
+	background-image:url(../imgs/amigo_morte.png);
+	animation:play3 .50s steps(4) infinite;
+	-webkit-animation: play3 .50s steps(4) infinite;
+    -moz-animation: play3 .50s steps(4) infinite;
+    -ms-animation: play3 .50s steps(4) infinite;
+    -o-animation: play3 .50s steps(4) infinite;
+}
+
+@keyframes play3 {
+	from {background-position:0px;}
+	to {background-position:-192px;}
+}
+
+@-webkit-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -192px; }
+}
+
+@-moz-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -192px; }
+}
+
+@-ms-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -192px; }
+}
+
+@-o-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -192px; }
+}
+
+#placar {
+	width: 450px;
+	height: 50px;
+	position: absolute;
+	left: 15px;
+	top: 360px;
+}
+
+h2 {
+	font-family:Titulo;
+	font-size:20px;
+	color:rgb(255, 251, 0)
+}
+
+#energia {
+	width: 140px;
+	height: 38px;
+	position: absolute;
+	left: 800px;
+	top: 15px;	
+}
+
+h3 {
+	font-family:Titulo;
+	font-size:20px;
+	color:#ff9b6d8f;
+
+}
+
+#fim {
+	width:350px;
+	height:200px;
+	background-color:rgb(0, 59, 51);
+ 	margin-left:auto;
+    margin-right:auto;
+ 	margin-top:100px;
+	text-align:center;
+	padding:10px;
+    color: rgb(166, 216, 177);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+
+}
+
+
+
+
+
+
+
+
